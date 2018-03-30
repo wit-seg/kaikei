@@ -32,3 +32,6 @@
 ## LICENSE
 
 This software is released under the MIT License, see [LICENSE](https://github.com/wit-seg/kaikei/blob/master/LICENSE).
+
+## システムイメージ
+![image1-1](https://user-images.githubusercontent.com/37394007/38126306-bc65fbee-342a-11e8-959e-0c241325f8ee.png)  
