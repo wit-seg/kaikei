@@ -68,10 +68,6 @@ gem 'thinreports-rails'
 # 併せて lib/tasks/doc.rake ファイルを作成
 gem 'sdoc'
 
-# Wicked PDF
-gem 'wicked_pdf'
-gem 'wkhtmltopdf-binary'
-
 # paginate
 gem 'kaminari', '~> 0.17.0'
 gem 'kaminari-bootstrap', '~> 3.0.1'
