@@ -1,0 +1,67 @@
+<%= form_for @entry, class: "form-horizontal" do |f| %>
+  <div class="well bs-component">
+    <fieldset>
+      <% if @entry.errors.any? %>
+        <div class="alert alert-dismissible alert-warning">
+          <% @entry.errors.full_messages.each do |message| %>
+            <p><%= message %></p>
+          <% end %>
+        </div>
+      <% end %>
+
+      <div class="row">
+        <div class="form-group">
+          <%= f.label :entry_date, class: "col-md-1 control-label" %>
+          <div class="col-md-3">
+            <%= f.text_field :entry_date, class: "form-control date-picker", placeholder: "YYYY/MM/DD" %>
+          </div>
+          <%= f.label :supplier_id, class: "col-md-2 control-label" %>
+          <div class="col-md-6">
+            <%= f.select :supplier_id, supplier_options, {}, class: "form-control" %>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="form-group">
+          <%= f.label :note, class: "col-md-1 control-label" %>
+          <div class="col-md-11">
+            <%= f.text_field :note, class: "form-control" %>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <label>（借方）</label>
+      </div>
+      <%= f.fields_for :debit_details, @entry.debit_details do |d| %>
+        <%= render 'form_detail', f: d, kind: Entry::KIND[:DEBIT] %>
+      <% end %>
+      <%= link_to_add_fields "＋借方明細", f, :debit_details, Entry::KIND[:DEBIT] %>
+
+      <hr>
+
+      <div class="row">
+        <label>（貸方）</label>
+      </div>
+      <%= f.fields_for :credit_details, @entry.credit_details do |d| %>
+        <%= render 'form_detail', f: d, kind: Entry::KIND[:CREDIT] %>
+      <% end %>
+      <%= link_to_add_fields "＋貸方明細", f, :credit_details, Entry::KIND[:CREDIT] %>
+
+      <hr>
+
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <%= link_to "キャンセル", root_path, class: "btn btn-default" %>
+          <%= f.submit button_name, class: "btn btn-primary" %>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+<% end %>
+

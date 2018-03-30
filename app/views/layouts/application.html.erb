@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>会計システム</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <%= link_to "会計システム", root_path, class: "navbar-brand" %>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <%# ログインしている場合のみ表示 %>
+              <% if logged_in? %>
+                <li><%= link_to "パスワード変更", edit_password_path %></li>
+                <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bs-component">
+            <% flash.each do |key, value| %>
+              <% class_name = (key == "notice") ? "success" : "warning" %>
+              <div class="alert alert-dismissible alert-<%= class_name %>">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <p><%= value %></p>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

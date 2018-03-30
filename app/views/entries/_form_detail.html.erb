@@ -1,0 +1,23 @@
+<div class="row">
+  <%= f.hidden_field :kind, value: kind %>
+  <div class="form-group">
+    <div class="col-md-2">
+      <%= f.label :item_code, "勘定科目", class: "control-label" %>
+    </div>
+    <div class="col-md-4">
+      <%= f.select :item_code, item_options, {}, class: "form-control" %>
+    </div>
+
+    <div class="col-md-1">
+      <%= f.label :money, "金額", class: "control-label" %>
+    </div>
+    <div class="col-md-2">
+      <%= f.text_field :money, class: "form-control" %>
+    </div>
+
+    <% if @entry.persisted? %>
+      <%= f.label :_destroy, "削除", class: "control-label" %>
+      <%= f.check_box :_destroy %>
+    <% end %>
+  </div>
+</div>

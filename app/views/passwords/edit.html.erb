@@ -1,0 +1,40 @@
+<div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="well bs-component">
+        <%= form_for @user, url: password_path, method: :patch, class: "form-horizontal" do |f| %>
+          <fieldset>
+            <legend>パスワード変更</legend>
+
+            <% if @user.errors.any? %>
+              <div class="alert alert-dismissible alert-warning">
+                <% @user.errors.full_messages.each do |message| %>
+                  <p><%= message %></p>
+                <% end %>
+              </div>
+            <% end %>
+
+            <div class="form-group">
+              <%= f.label :password, class: "col-lg-2 control-label"  %>
+              <div class="col-lg-10">
+                <%= f.password_field :password, class: "form-control", placeholder: "新しいパスワード" %>
+                <span class="help-block">8文字以上で入力してください</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <%= f.label :password_confirmation, class: "col-lg-2 control-label"  %>
+              <div class="col-lg-10">
+                <%= f.password_field :password_confirmation, class: "form-control", placeholder: "確認用にもう一度入力" %>
+　　           </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <%= link_to "キャンセル", root_path, class: "btn btn-default" %>
+                <%= f.submit "更新", class: "btn btn-primary" %>
+              </div>
+            </div>
+          </fieldset>
+        <% end %>
+      </div>
+    </div>
+</div>

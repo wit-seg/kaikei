@@ -1,0 +1,31 @@
+// suppliers.pdf
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 24px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+  padding: 8px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: bold;
+  display: table-cell;
+  border-top: 0;
+}
+
+td {
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  line-height: 1.5;
+  text-align: left;
+  display: table-cell;
+  border-top: 0;
+}

@@ -1,0 +1,31 @@
+<div>
+  <div class="row">
+    <div class="col-md-12">
+      <div>
+        <h3>仕訳帳出力</h3>
+      </div>
+
+      <div class="well bs-component">
+        <%= form_tag reports_journal_path, method: :get, target: '_preview', class: "form-horizontal" do %>
+          <fieldset>
+            <div class="form-group">
+              <label for="year" class="col-sm-1 control-label">年</label>
+              <div class="col-sm-2">
+                <%= select_tag :year, options_for_select(year_options, selected: params[:year]), class: "form-control" %>
+              </div>
+              <label for="month" class="col-sm-1 control-label">月</label>
+              <div class="col-sm-2">
+                <%= select_tag :month, options_for_select(month_options, selected: params[:month]), class: "form-control" %>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6 col-lg-offset-2">
+                <%= link_to "リセット", reports_output_journal_path, class: "btn btn-default" %>
+                <%= submit_tag "出力", class: "btn btn-primary", data: {disable_with: false} %>
+              </div>
+            </div>
+          </fieldset>
+        <% end %>
+      </div>
+    </div>
+</div>

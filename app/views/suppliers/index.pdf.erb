@@ -1,0 +1,15 @@
+<h3>取引先一覧</h3>
+<table>
+  <tr>
+    <th>名称</th>
+  </tr>
+  <% @suppliers.each do |supplier| %>
+    <tr>
+      <td><%= supplier.name %></td>
+    </tr>
+  <% end %>
+</table>
+  
+  <!-- 改ページ 
+  <p style='page-break-before: always;'/>
+  -->

@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-12">
+    <div>
+      <h3>勘定科目一覧</h3>
+    </div>
+
+    <div class="bs-component">
+      <%= link_to '新規登録', new_item_path %>
+      <table class="table table-striped table-hover ">
+        <thead>
+          <tr>
+            <th width=150>勘定科目コード</th>
+            <th>名称</th>
+            <th>略称</th>
+            <th width=100>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @items.each do |item| %>
+            <tr>
+              <td><%= item.code %></td>
+              <td><%= item.name %></td>
+              <td><%= item.short_name %></td>
+              <td>
+                <%= link_to '編集', edit_item_path(item) %>
+                |
+                <%= link_to '削除', item, method: :delete, data: { confirm: '本当に削除してもよろしいですか?' } %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <div>
+        全 <%= @items.total_count %> 件<br />
+        <%= paginate @items %>
+      </div>
+    </div>
+  </div>
+</div>

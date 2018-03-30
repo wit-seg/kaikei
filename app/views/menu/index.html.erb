@@ -1,0 +1,54 @@
+<div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="well bs-component">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">仕訳入力</h3>
+            </div>
+            <div class="panel-body">
+              <%= link_to "仕訳一覧", entries_path %><br>
+              <%= link_to "仕訳登録", new_entry_path %>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="well bs-component">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">帳票出力</h3>
+            </div>
+            <div class="panel-body">
+              <%= link_to "仕訳帳", reports_output_journal_path %><br>
+              <%= link_to "総勘定元帳", reports_output_general_ledger_path %><br>
+              <%= link_to "仕入帳", "#" %><br>
+              <%= link_to "買掛金元帳", "#" %><br>
+              <%= link_to "売上帳", "#" %><br>
+              <%= link_to "売掛金元帳", "#" %><br>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    
+    <div class="col-sm-4">
+      <div class="well bs-component">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">マスタメンテナンス</h3>
+            </div>
+            <div class="panel-body">
+              <%= link_to "勘定科目マスタ", items_path %><br>
+              <%= link_to "取引先マスタ", suppliers_path %>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>

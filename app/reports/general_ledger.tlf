@@ -1,0 +1,626 @@
+{
+  "version": "0.10.0",
+  "items": [
+    {
+      "id": "",
+      "type": "text",
+      "display": true,
+      "description": "",
+      "x": 20,
+      "y": 34,
+      "width": 555.2,
+      "height": 23,
+      "style": {
+        "font-family": [
+          "Helvetica"
+        ],
+        "font-size": 20,
+        "color": "#000000",
+        "text-align": "center",
+        "vertical-align": "top",
+        "line-height": "",
+        "line-height-ratio": "",
+        "letter-spacing": "",
+        "font-style": []
+      },
+      "texts": [
+        "総　勘　定　元　帳"
+      ]
+    },
+    {
+      "id": "year_month",
+      "type": "text-block",
+      "display": true,
+      "description": "",
+      "x": 32.6,
+      "y": 70,
+      "width": 118,
+      "height": 16,
+      "style": {
+        "font-family": [
+          "Helvetica"
+        ],
+        "font-size": 12,
+        "color": "#000000",
+        "text-align": "left",
+        "vertical-align": "top",
+        "line-height": "",
+        "line-height-ratio": "",
+        "letter-spacing": "",
+        "font-style": [],
+        "overflow": "truncate",
+        "word-wrap": "none"
+      },
+      "reference-id": "",
+      "value": "",
+      "multiple-line": false,
+      "format": {
+        "base": "",
+        "type": ""
+      }
+    },
+    {
+      "id": "default",
+      "type": "list",
+      "display": true,
+      "description": "",
+      "x": 34.6,
+      "y": 110,
+      "width": 530.4,
+      "height": 692.9,
+      "header": {
+        "enabled": true,
+        "height": 20.8,
+        "translate": {
+          "x": 0,
+          "y": 0
+        },
+        "items": [
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 34.6,
+            "y": 110,
+            "width": 40,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#eeece1"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 75,
+            "y": 110,
+            "width": 160,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#eeece1"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 235,
+            "y": 110,
+            "width": 80,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#eeece1"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 315,
+            "y": 110,
+            "width": 80,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#eeece1"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "text",
+            "display": true,
+            "description": "",
+            "x": 43,
+            "y": 115,
+            "width": 21,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "center",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": []
+            },
+            "texts": [
+              "月日"
+            ]
+          },
+          {
+            "id": "",
+            "type": "text",
+            "display": true,
+            "description": "",
+            "x": 140,
+            "y": 115,
+            "width": 31,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "center",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": []
+            },
+            "texts": [
+              "摘　要"
+            ]
+          },
+          {
+            "id": "",
+            "type": "text",
+            "display": true,
+            "description": "",
+            "x": 260,
+            "y": 115,
+            "width": 31,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "center",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": []
+            },
+            "texts": [
+              "借　方"
+            ]
+          },
+          {
+            "id": "",
+            "type": "text",
+            "display": true,
+            "description": "",
+            "x": 340,
+            "y": 115,
+            "width": 30,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "center",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": []
+            },
+            "texts": [
+              "貸　方"
+            ]
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 395,
+            "y": 110,
+            "width": 169,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#eeece1"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "text",
+            "display": true,
+            "description": "",
+            "x": 455,
+            "y": 115,
+            "width": 41,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "center",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": []
+            },
+            "texts": [
+              "取引先名"
+            ]
+          }
+        ]
+      },
+      "detail": {
+        "height": 20,
+        "translate": {
+          "x": 0,
+          "y": -2.6
+        },
+        "items": [
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 34.6,
+            "y": 133.4,
+            "width": 40,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#FFFFFF"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 75,
+            "y": 133.4,
+            "width": 160,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#FFFFFF"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 235,
+            "y": 133.4,
+            "width": 80,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#FFFFFF"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 315,
+            "y": 133.4,
+            "width": 80,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#FFFFFF"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "day",
+            "type": "text-block",
+            "display": true,
+            "description": "",
+            "x": 36.6,
+            "y": 137.6,
+            "width": 35,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "center",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": [],
+              "overflow": "truncate",
+              "word-wrap": "none"
+            },
+            "reference-id": "",
+            "value": "",
+            "multiple-line": false,
+            "format": {
+              "base": "",
+              "type": ""
+            }
+          },
+          {
+            "id": "note",
+            "type": "text-block",
+            "display": true,
+            "description": "",
+            "x": 77.6,
+            "y": 137.6,
+            "width": 154,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "left",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": [],
+              "overflow": "truncate",
+              "word-wrap": "none"
+            },
+            "reference-id": "",
+            "value": "",
+            "multiple-line": false,
+            "format": {
+              "base": "",
+              "type": ""
+            }
+          },
+          {
+            "id": "debit_money",
+            "type": "text-block",
+            "display": true,
+            "description": "",
+            "x": 245,
+            "y": 137.6,
+            "width": 65,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "right",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": [],
+              "overflow": "truncate",
+              "word-wrap": "none"
+            },
+            "reference-id": "",
+            "value": "",
+            "multiple-line": false,
+            "format": {
+              "base": "",
+              "type": "number",
+              "number": {
+                "delimiter": ",",
+                "precision": 0
+              }
+            }
+          },
+          {
+            "id": "credit_money",
+            "type": "text-block",
+            "display": true,
+            "description": "",
+            "x": 325,
+            "y": 137.6,
+            "width": 65,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "right",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": [],
+              "overflow": "truncate",
+              "word-wrap": "none"
+            },
+            "reference-id": "",
+            "value": "",
+            "multiple-line": false,
+            "format": {
+              "base": "",
+              "type": "number",
+              "number": {
+                "delimiter": ",",
+                "precision": 0
+              }
+            }
+          },
+          {
+            "id": "",
+            "type": "rect",
+            "display": true,
+            "description": "",
+            "x": 395,
+            "y": 133.4,
+            "width": 169,
+            "height": 20,
+            "style": {
+              "border-color": "#000000",
+              "border-width": 1,
+              "border-style": "solid",
+              "fill-color": "#FFFFFF"
+            },
+            "border-radius": 0
+          },
+          {
+            "id": "supplier_name",
+            "type": "text-block",
+            "display": true,
+            "description": "",
+            "x": 400,
+            "y": 137.6,
+            "width": 154,
+            "height": 11,
+            "style": {
+              "font-family": [
+                "Helvetica"
+              ],
+              "font-size": 10,
+              "color": "#000000",
+              "text-align": "left",
+              "vertical-align": "top",
+              "line-height": "",
+              "line-height-ratio": "",
+              "letter-spacing": "",
+              "font-style": [],
+              "overflow": "truncate",
+              "word-wrap": "none"
+            },
+            "reference-id": "",
+            "value": "",
+            "multiple-line": false,
+            "format": {
+              "base": "",
+              "type": ""
+            }
+          }
+        ]
+      },
+      "page-footer": {
+        "enabled": true,
+        "height": 17.6,
+        "translate": {
+          "x": 0,
+          "y": -6
+        },
+        "items": []
+      },
+      "footer": {
+        "enabled": true,
+        "height": 17.6,
+        "translate": {
+          "x": 0,
+          "y": -6
+        },
+        "items": []
+      },
+      "content-height": 672.1,
+      "auto-page-break": true
+    },
+    {
+      "id": "item_name",
+      "type": "text-block",
+      "display": true,
+      "description": "",
+      "x": 245,
+      "y": 85,
+      "width": 103.6,
+      "height": 14,
+      "style": {
+        "font-family": [
+          "Helvetica"
+        ],
+        "font-size": 12,
+        "color": "#000000",
+        "text-align": "center",
+        "vertical-align": "top",
+        "line-height": "",
+        "line-height-ratio": "",
+        "letter-spacing": "",
+        "font-style": [],
+        "overflow": "truncate",
+        "word-wrap": "none"
+      },
+      "reference-id": "",
+      "value": "",
+      "multiple-line": false,
+      "format": {
+        "base": "",
+        "type": ""
+      }
+    }
+  ],
+  "state": {
+    "layout-guides": []
+  },
+  "title": "journal",
+  "report": {
+    "paper-type": "A4",
+    "orientation": "portrait",
+    "margin": [
+      20,
+      20,
+      20,
+      20
+    ]
+  }
+}

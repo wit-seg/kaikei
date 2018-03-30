@@ -1,0 +1,16 @@
+<table class="detail">
+  <%# 複数明細ある場合には「諸口」行を出力する %>
+  <% if details.length > 1 %>
+    <tr>
+      <td>諸口</td>
+      <td></td>
+    </tr>
+  <% end %>
+
+  <% details.each do |detail| %>
+    <tr>
+      <td><%= detail.item.try(:short_name) %></td>
+      <td class="right"><%= number_with_delimiter(detail.money) %></td>
+    </tr>
+  <% end %>
+</table>
