@@ -27,8 +27,12 @@
 6. rails s
 7. http://localhost:3000/
 
-  ※ログイン情報は、db/seeds.rb を参照してください
+   ※ログイン情報は、db/seeds.rb を参照してください
 
 ## LICENSE
 
 This software is released under the MIT License, see [LICENSE](https://github.com/wit-seg/kaikei/blob/master/LICENSE).
+
+## システムイメージ
+![image1](https://user-images.githubusercontent.com/37394007/38126520-1f405560-342c-11e8-9e7e-154b855b1055.png)  
+![image2](https://user-images.githubusercontent.com/37394007/38126521-1f6c34b4-342c-11e8-8989-208e505aee70.png)
