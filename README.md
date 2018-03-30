@@ -25,7 +25,7 @@
 4. rake db:migrate
 5. rake db:seed
 6. rails s
-7. http://localhost:300/
+7. http://localhost:3000/
 
   ※ログイン情報は、db/seeds.rb を参照してください
 
