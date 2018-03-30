@@ -4,6 +4,7 @@
 基本的な仕訳入力といくつかの帳票出力を実施することができます。  
 各マスタの内容等、適宜書き換えてご使用ください。
 
+
 ## 機能
 * 仕訳入力機能  
 * 仕訳一覧表示機能
@@ -19,10 +20,14 @@
 
 ## 導入手順
 1. bundle install
-2. rake db:create
-3. rake db:migrate
-4. rake db:seed
-5. rails s
+2. config/database.yml のデータベース接続情報を変更
+3. rake db:create
+4. rake db:migrate
+5. rake db:seed
+6. rails s
+7. http://localhost:300/
+
+  ※ログイン情報は、db/seeds.rb を参照してください
 
 ## LICENSE
 
